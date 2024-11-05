@@ -1,0 +1,128 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #111;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  span {
+    color: #b80fe2;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        color: #ddd;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #b80fe2;
+
+          span {
+            color: #ddd;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-btn {
+    padding: 10px 20px;
+    background-color: #b668fb;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #6a0284;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+
+    i {
+      pointer-events: none;
+    }
+  }
+
+  /* Media query for tablets and below */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .navbar-links {
+      flex-direction: column;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+
+      &.active {
+        height: 200px;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    .contact-btn {
+      margin-top: 10px;
+    }
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 576px) {
+    justify-content: space-evenly;
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .navbar-links li a {
+      font-size: 0.9rem;
+      display: flex;
+    }
+
+    .contact-btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+}

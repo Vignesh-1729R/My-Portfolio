@@ -1,0 +1,78 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #9f63ee;
+    width: 100%;
+  .myself{
+    // box-shadow: 5px 0 10px #9f63ee, 5px 0 10px #9f63ee;
+    // padding: 5rem 20rem;
+    // border-radius: 50px;
+    margin: 4rem ;
+    padding: 6rem;
+    color: #333;
+  }
+    h4 {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    // h1 {
+    //   font-size: 3rem;
+    //   font-weight: bold;
+    //   margin-bottom: 15px;
+    //   color: #cdcdd4;
+    //   span {
+    //     color: #73028f;
+    //   }
+    // }
+    h1 {
+      color: #cdcdd4;
+      font-size: 1rem;
+      margin-bottom: 10px;
+  span {
+    // color: #ffffff;
+    color: #73028f;
+  }
+}
+    h3 {
+      font-size: 1.5rem;
+      color: #d2d0d2;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 600px;
+      color: #cfcdd1;
+      margin: 0 auto;
+  
+      span {
+        font-weight: 700;
+        color: #000;
+      }
+    }
+    .about-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      gap: 20px;
+      img {
+        width: 40px;
+        margin: 10px 0px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+        &:hover {
+          transform: scale(1.2);
+          color: #73028f;
+        }
+      }
+    }
+  }
+  
+  

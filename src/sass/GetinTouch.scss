@@ -1,0 +1,105 @@
+.get-in-touch {
+  text-align: center;
+  padding: 5rem;
+
+  h1 {
+    background: linear-gradient(150deg, #7e1dfc, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; 
+    margin: 40px 0 0;
+  }
+  p {
+    color: #ddd;
+    margin: 1rem;
+  }
+  .content-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  .lets-make-something {
+    text-align: center;
+    h2 {
+      color: #ddd;
+      margin: 10px 0px;
+    }
+    h6 {
+      color: #db51fe;
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+      color: #ddd;
+    }
+    img {
+      width: 30px;
+      margin: 8px 0px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 40px;
+    border: 4px solid #c99fff;
+    box-shadow: 0px 0px 30px #b67fff;
+
+    h5 {
+      font-size: 20px;
+      color: #db51fe;
+      padding: 10px;
+    }
+    .sucess-heading{
+      font-size: 20px;
+      color: #00ff55;
+      padding: 10px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      max-width: 350px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: #555;
+      color: #ffff;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .names {
+      display: inline-flex;
+      gap: 10px;
+    }
+    button {
+      padding: 12px 80px;
+      background-color: #73028f;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .form-sucess-msg{
+      color: #d0ff00;;
+      font-family: 'Lucida Sans';
+      font-size: 20px;
+
+    }
+  }
+}
